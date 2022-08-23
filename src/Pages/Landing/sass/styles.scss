@@ -1,0 +1,69 @@
+@import 'colour';
+@import 'mixins';
+
+.landingPage{
+    background-color:$landingbgcolour;
+    .firstSection{
+        display: flex;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        justify-content: space-between;
+        padding-top: 30px;
+        align-items: center;
+        @media screen and (max-width:812px) {
+            display: grid;
+            justify-content: center;
+        }
+        div:first-child{
+
+            h1{
+                font-size: 64px;
+                line-height: 77px;
+                @include styles;
+                font-weight: 500;
+                @media screen and (max-width:678px) {
+                    font-size:9vw;
+                    line-height: 45px;
+                }
+                .emphasis{
+                    color: $secondColour;
+                }
+            }
+            p {
+                @include paragraph;
+                padding-top: 30px;
+            }
+            .store{
+
+               
+               .storeImg{
+                    padding-top: 30px;
+                    padding-right: 20px;
+                    
+                }
+            }
+        }
+        div:nth-child(2){
+            padding-right: 30px;
+            img{
+                width: 100%;
+            }
+            @media screen and (max-width:812px) {
+                padding-top: 20px;
+                justify-content: center;
+                margin: auto;
+                padding-right: 0px;
+            }
+            @media screen and (max-width:451px) {
+                img{
+
+                    width: 100%;
+                    justify-content: center;
+                    margin: auto;
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+
+}

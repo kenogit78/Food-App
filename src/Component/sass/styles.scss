@@ -1,0 +1,96 @@
+@import 'colour';
+@import 'mixins';
+@import 'variables';
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+}
+
+.font-link {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: $smallSpace;
+    padding-right: $smallSpace;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-family: Poppins;
+
+        h1 {
+            padding-left: $littspace;
+            font-size: 36px;
+            color: #ffffff;
+
+        }
+
+        @include styles;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+        @include styles;
+        font-size: 21px;
+        font-weight: 500;
+        align-items: center;
+
+        li:first-child {
+            color: $secondColour;
+        }
+
+        .signUp {
+            font-size: 17px;
+            font-weight: 600;
+            background-color: $btnnavColour;
+            color: $landingbgcolour;
+            border: none;
+            padding: 12px 25px 12px 25px;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $landingbgcolour;
+                color: $secondColour;
+            }
+        }
+    }
+    .toggle{
+        display: none;
+    }
+
+    @media screen and (max-width:760px) {
+        .toggle{
+            display: flex;
+        }
+        .navlinkShow {
+            position: absolute;
+            display: block;
+            list-style: none;
+            background-color: white;
+            right: 0;
+            top: 100px;
+            left: -20px;
+            transition: all 0.5secs linear;
+            li{
+                padding-bottom: 10px;
+            }
+            background-color: $landingbgcolour;
+        }
+
+        .navlinksHide {
+            display: none;
+        }
+
+    }
+}

@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  color: white;
+}
+
+.font-link {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Poppins;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+}
+
+nav .logo h1 {
+  padding-left: 1.5vw;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li:first-child {
+  color: #FBDDBB;
+}
+
+nav ul .signUp {
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #E2B887;
+  color: #00302E;
+  border: none;
+  padding: 12px 25px 12px 25px;
+  border-radius: 5px;
+}
+
+nav ul .signUp:hover {
+  background-color: #00302E;
+  color: #FBDDBB;
+}
+
+nav .toggle {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  nav .toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .navlinkShow {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: white;
+    right: 0;
+    top: 100px;
+    left: -20px;
+    -webkit-transition: all 0.5secs linear;
+    transition: all 0.5secs linear;
+    background-color: #00302E;
+  }
+  nav .navlinkShow li {
+    padding-bottom: 10px;
+  }
+  nav .navlinksHide {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
