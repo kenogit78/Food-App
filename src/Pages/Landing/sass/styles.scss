@@ -65,5 +65,26 @@
             }
         }
     }
-
+    .secondSection{
+        justify-content: center;
+        padding-top: 50px;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        h2{
+            @include styles;
+            padding-top: 20px;
+            font-size: 20px;
+            padding-bottom: 20px;
+            @media screen and (min-width:812px) {
+                font-size: 33px;
+             }
+        }
+        text-align: center;
+        p{
+            @include paragraph;
+        }
+        @media screen and (min-width:812px) {
+           padding-top: 150px;
+        }
+    }
 }
