@@ -72,6 +72,10 @@ nav {
     @media screen and (max-width:760px) {
         .toggle{
             display: flex;
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            
         }
         .navlinkShow {
             position: absolute;

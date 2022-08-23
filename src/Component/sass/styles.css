@@ -89,6 +89,9 @@ nav .toggle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
   }
   nav .navlinkShow {
     position: absolute;
