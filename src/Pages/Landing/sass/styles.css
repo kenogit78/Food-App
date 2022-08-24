@@ -113,7 +113,7 @@
 
 @media screen and (min-width: 812px) {
   .landingPage .secondSection h2 {
-    font-size: 33px;
+    font-size: 36px;
   }
 }
 
@@ -130,5 +130,138 @@
   .landingPage .secondSection {
     padding-top: 150px;
   }
+}
+
+.landingPage .thirdSection {
+  padding-top: 80px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  text-align: center;
+}
+
+@media screen and (min-width: 812px) {
+  .landingPage .thirdSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.landingPage .thirdSection .cards img {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
+}
+
+.landingPage .thirdSection .cards h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 30px;
+  color: #FBDDBB;
+}
+
+@media screen and (min-width: 812px) {
+  .landingPage .thirdSection .cards h2 {
+    font-size: 33px;
+  }
+}
+
+.landingPage .thirdSection .cards p {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.74);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.landingPage .fourthSection {
+  padding-right: 3vw;
+  padding-left: 3vw;
+  padding-top: 150px;
+  text-align: center;
+}
+
+@media screen and (min-width: 812px) {
+  .landingPage .fourthSection {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.landingPage .fourthSection div:first-child h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 20px;
+  color: #FBDDBB;
+}
+
+@media screen and (min-width: 812px) {
+  .landingPage .fourthSection div:first-child h1 {
+    text-align: justify;
+    font-size: 36px;
+  }
+}
+
+.landingPage .fourthSection div:first-child p {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.74);
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 812px) {
+  .landingPage .fourthSection div:first-child {
+    text-align: justify;
+  }
+}
+
+.landingPage .fourthSection div:nth-child(2) {
+  padding-top: 10px;
+}
+
+.landingPage .fourthSection div:nth-child(2) span input {
+  height: 51px;
+  width: 190px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 918px) {
+  .landingPage .fourthSection div:nth-child(2) span input {
+    width: 299px;
+  }
+}
+
+.landingPage .fourthSection div:nth-child(2) span .notifyBtn {
+  height: 47px;
+  padding-left: 10px;
+  background-color: #FBDDBB;
+  color: #00302E;
+  font-family: Poppins;
+  font-style: normal;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
 }
 /*# sourceMappingURL=styles.css.map */
