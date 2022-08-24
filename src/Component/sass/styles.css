@@ -112,4 +112,101 @@ nav .toggle {
     display: none;
   }
 }
+
+.footer {
+  background-color: #0B0D17;
+  padding-right: 3vw;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer .subFooter {
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 812px) {
+  .footer .subFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10vw;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .footer .subFooter {
+    gap: 17vw;
+  }
+}
+
+.footer .subFooter .firstSectionFooter, .footer .subFooter .secondSectionFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 812px) {
+  .footer .subFooter .firstSectionFooter, .footer .subFooter .secondSectionFooter {
+    gap: 10vw;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .footer .subFooter .firstSectionFooter, .footer .subFooter .secondSectionFooter {
+    gap: 17vw;
+  }
+}
+
+.footer .subFooter .firstSectionFooter ul, .footer .subFooter .secondSectionFooter ul {
+  list-style-type: none;
+}
+
+.footer .subFooter .firstSectionFooter ul li:first-child, .footer .subFooter .secondSectionFooter ul li:first-child {
+  font-style: normal;
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  color: #F4F5F7;
+  line-height: 28px;
+}
+
+.footer .subFooter .firstSectionFooter ul li, .footer .subFooter .secondSectionFooter ul li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #EEEFF4;
+  padding-bottom: 20px;
+}
+
+.footer .subFooter .secondSectionFooter {
+  padding-top: 100px;
+}
+
+@media screen and (min-width: 812px) {
+  .footer .subFooter .secondSectionFooter {
+    padding-top: 0px;
+    gap: 10vw;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .footer .subFooter .secondSectionFooter {
+    gap: 17vw;
+  }
+}
+
+@media screen and (min-width: 812px) {
+  .footer .subFooter {
+    padding-bottom: 40px;
+  }
+}
+
+.footer hr {
+  background: #FFFFFF;
+  opacity: 0.1;
+}
 /*# sourceMappingURL=styles.css.map */

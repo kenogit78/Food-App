@@ -7,6 +7,7 @@ import applestore from '../../Component/Images/appleStore.svg';
 import pasta from '../../Component/Images/pasta.svg';
 import burger from '../../Component/Images/burger.svg';
 import balls from '../../Component/Images/balls.svg';
+import Footer from '../../Component/Footer';
 
 const Landing = () => {
   const foods = [
@@ -58,8 +59,9 @@ const Landing = () => {
             <span><input type="text" placeholder='gregphillips@gmail.com'/> <button className='notifyBtn'>Get notified</button></span>
           </div>
         </div>
+    
 
-
+                <Footer/>
     </div>
   )
 }

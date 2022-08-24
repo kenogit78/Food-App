@@ -65,18 +65,20 @@ nav {
             }
         }
     }
-    .toggle{
+
+    .toggle {
         display: none;
     }
 
     @media screen and (max-width:760px) {
-        .toggle{
+        .toggle {
             display: flex;
             background-color: transparent;
             border: none;
             font-size: 30px;
-            
+
         }
+
         .navlinkShow {
             position: absolute;
             display: block;
@@ -86,9 +88,11 @@ nav {
             top: 100px;
             left: -20px;
             transition: all 0.5secs linear;
-            li{
+
+            li {
                 padding-bottom: 10px;
             }
+
             background-color: $landingbgcolour;
         }
 
@@ -96,5 +100,93 @@ nav {
             display: none;
         }
 
+    }
+}
+
+.footer {
+    background-color: $footerColour;
+
+    // padding-left: $smallSpace;
+    padding-right: $smallSpace;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .subFooter {
+        @media screen and (min-width:812px) {
+            display: flex;
+            gap: 10vw;
+        }
+
+        @media screen and (min-width:1140px) {
+
+            gap: 17vw;
+        }
+
+
+
+
+        .firstSectionFooter {
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (min-width:812px) {
+
+                gap: 10vw;
+            }
+
+            @media screen and (min-width:1140px) {
+
+                gap: 17vw;
+            }
+
+            ul {
+                list-style-type: none;
+
+                li:first-child {
+                    font-style: normal;
+                    font-size: 20px;
+                    padding-bottom: 20px;
+                    font-weight: 500;
+                    color: #F4F5F7;
+                    line-height: 28px;
+                }
+
+                li {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #EEEFF4;
+                    padding-bottom: 20px;
+                }
+
+            }
+        }
+
+        .secondSectionFooter {
+            @extend .firstSectionFooter;
+            padding-top: 100px;
+
+            @media screen and (min-width:812px) {
+                padding-top: 0px;
+                gap: 10vw;
+            }
+
+            @media screen and (min-width:1140px) {
+
+                gap: 17vw;
+            }
+
+
+
+        }
+        padding-bottom: 20px;
+        @media screen and (min-width:812px) {
+           padding-bottom: 40px;
+        }
+    }
+    hr{
+        background: #FFFFFF;
+        opacity: 0.1;
     }
 }

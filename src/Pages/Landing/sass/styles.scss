@@ -89,7 +89,7 @@
         }
     }
     .thirdSection{
-        padding-top: 80px;
+        padding-top: 100px;
         padding-left: $sidepadding;
         padding-right: $sidepadding;
         text-align: center;
@@ -128,7 +128,9 @@
         padding-left: $sidepadding;
         padding-top: 150px;
         text-align: center;
+        padding-bottom: 150px;
         @media screen and (min-width:812px) {
+            padding-top: 200px;
              justify-content: space-between;
              display: flex;
            align-items: center;
@@ -175,6 +177,13 @@
                     border: none;
                     border-radius: 5px;
                     font-size: 18px;
+                    @media screen and (min-width:1140px) {
+                        width: 182px;
+                     }
+                     &:hover{
+                        background-color: $landingbgcolour;
+                        color: $secondColour;
+                     }
                     
                 }
             }
