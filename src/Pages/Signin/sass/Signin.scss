@@ -1,4 +1,8 @@
 .login {
+    @media screen and (min-width:812px) {
+        display: flex;
+    }
+    display: flex;
     div:first-child {
         display: none;
     }
@@ -43,11 +47,15 @@
             }
             .btnShow{
                 position: absolute;
-                right: 25px;
-                top:242px;
+                // right: 25px;
+                // top:242px;
                 color: #00302E;
                 border: none;
                 background-color: transparent;
+                transform: translate(-50% -50%);
+                top: 43%;
+        left: 75%;
+        transform: translate(-30%,-30%);
 
                 
             }
