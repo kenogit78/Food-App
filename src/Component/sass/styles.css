@@ -278,4 +278,17 @@ nav .toggle {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.Btn {
+  background-color: #00302E;
+  color: #FBDDBB;
+  border-color: #00302E;
+  width: 300px;
+  height: 40px;
+}
+
+.Btn:hover {
+  background-color: #FBDDBB;
+  color: #00302E;
+}
 /*# sourceMappingURL=styles.css.map */
