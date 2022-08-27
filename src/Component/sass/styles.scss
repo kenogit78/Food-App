@@ -251,3 +251,14 @@ nav {
     }
 
 }
+.Btn{
+    background-color:$landingbgcolour;
+    color: $secondColour;
+    border-color: $landingbgcolour;
+    width: 300px;
+    height: 40px;
+    &:hover{
+        background-color: $secondColour;
+        color: $landingbgcolour;
+    }
+}

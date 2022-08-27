@@ -1,6 +1,13 @@
 .login {
+    @media screen and (min-width:812px) {
+        display: flex;
+    }
+    
     div:first-child {
         display: none;
+        @media screen and (min-width:812px) {
+            display: flex;
+        }
     }
 
     div:nth-child(2) {
@@ -15,7 +22,7 @@
         text-align: center;
         
         h2 {
-            font-family: 'Poppins';
+            font-family: Poppins;
             font-style: normal;
             font-weight: 600;
             font-size: 27px;
@@ -43,7 +50,16 @@
             }
             .btnShow{
                 position: absolute;
-                right: 25px;
+                // right: 25px;
+                // top:242px;
+                color: #00302E;
+                border: none;
+                background-color: transparent;
+                transform: translate(-50% -50%);
+                top: 43%;
+        left: 75%;
+        transform: translate(-30%,-30%);
+
                 
             }
         }
