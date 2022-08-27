@@ -162,14 +162,14 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 19px;
   padding-top: 30px;
   color: #FBDDBB;
 }
 
 @media screen and (min-width: 812px) {
   .landingPage .thirdSection .cards h2 {
-    font-size: 33px;
+    font-size: 27px;
   }
 }
 

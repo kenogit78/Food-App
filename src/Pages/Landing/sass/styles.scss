@@ -109,11 +109,11 @@
             }
             h2{
                 @include styles;
-                font-size: 25px;
+                font-size: 19px;
                 padding-top: 30px;
                 color: $secondColour;
                 @media screen and (min-width:812px) {
-                    font-size: 33px;
+                    font-size: 27px;
                 }
             }
             p{

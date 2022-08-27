@@ -65,6 +65,11 @@ nav ul li:first-child {
   color: #FBDDBB;
 }
 
+nav ul .login {
+  color: white;
+  text-decoration: none;
+}
+
 nav ul .signUp {
   font-size: 17px;
   font-weight: 600;
@@ -117,7 +122,6 @@ nav .toggle {
   background-color: #0B0D17;
   padding-right: 3vw;
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .footer .subFooter {
@@ -208,5 +212,70 @@ nav .toggle {
 .footer hr {
   background: #FFFFFF;
   opacity: 0.1;
+}
+
+.footer .lastSubFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer .lastSubFooter p {
+  color: #D9DBE1;
+}
+
+@media screen and (max-width: 500px) {
+  .footer .lastSubFooter {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer .lastSubFooter .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .footer .lastSubFooter .socials {
+    padding-top: 20px;
+  }
+}
+
+.footer .lastSubFooter .socials div {
+  width: 25px;
+  padding: 2px;
+  background: black;
+  border-radius: 100%;
+}
+
+.footer .lastSubFooter .socials div .icons {
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */

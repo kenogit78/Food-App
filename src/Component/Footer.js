@@ -4,7 +4,7 @@ import Applestore from "./Images/appleStore.svg";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-
+import twitter from './Images/twitter.svg';
 const Footer = () => {
   return (
     <div className="footer">
@@ -55,16 +55,15 @@ const Footer = () => {
           <p>&#169; 2021 SIMEON, All rights reserved</p>
         
         </div>
-        <div>
-          <span>
-            <FaInstagram />
-          </span>
-          <span>
-            <FaYoutube />
-          </span>
-          <span>
-            <FaTwitter />
-          </span>
+        <div className="socials">
+          <div>
+            <FaInstagram  className="icons"/>
+          </div>
+          <div><FaYoutube />
+          </div>
+          <div>
+            <img src={twitter} alt='twitter'/>
+          </div>
         </div>
       </div>
     </div>

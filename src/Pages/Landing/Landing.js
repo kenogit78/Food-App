@@ -12,8 +12,8 @@ import Footer from '../../Component/Footer';
 const Landing = () => {
   const foods = [
     {id: 1, foodname: 'Stir fry Pasta', image: pasta, content:`Stir fry pasta yada yada yada  because of Sesan`},
-    {id: 2, foodname:'Meat Balls', image: burger, content:"Stir fry pasta yada yada yada because of Sesan"},
-    {id: 3, foodname:'Burger Meal', image: balls, content:"Stir fry pasta yada yada yada because of Sesan"},
+    {id: 2, foodname:'Burger Meal', image: balls, content:"Stir fry pasta yada yada yada because of Sesan"},
+    {id: 3, foodname:'Meat Balls', image: burger, content:"Stir fry pasta yada yada yada because of Sesan"},
   ]
   return (
     <div className='landingPage'>
@@ -40,10 +40,10 @@ const Landing = () => {
         <div className='thirdSection'>
                 {
                   foods && foods.map((food)=>
-                 <div className='cards'>
+                 <div className='cards' key={food.id}>
                   <img src={food.image} alt='pasta'/>
                   <h2>{food.foodname}</h2>
-                  <p>{food.content}</p>
+                  <p>Stir fry pasta yada yada yada <br/> because of Sesan</p>
 
                  </div> 
                   )

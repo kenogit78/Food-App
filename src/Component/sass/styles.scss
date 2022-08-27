@@ -49,6 +49,10 @@ nav {
         li:first-child {
             color: $secondColour;
         }
+        .login{
+            color: white;
+            text-decoration: none;
+        }
 
         .signUp {
             font-size: 17px;
@@ -109,7 +113,7 @@ nav {
     // padding-left: $smallSpace;
     padding-right: $smallSpace;
     padding-top: 50px;
-    padding-bottom: 50px;
+
 
     .subFooter {
         @media screen and (min-width:812px) {
@@ -180,13 +184,70 @@ nav {
 
 
         }
+
         padding-bottom: 20px;
+
         @media screen and (min-width:812px) {
-           padding-bottom: 40px;
+            padding-bottom: 40px;
         }
     }
-    hr{
+
+    hr {
         background: #FFFFFF;
         opacity: 0.1;
     }
+
+    .lastSubFooter {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        p{
+
+            color: #D9DBE1;
+        }
+        @media screen and ( max-width:500px) {
+            display: grid;
+            justify-content: center;
+            
+        }
+    
+
+        .socials {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            
+            @media screen and ( max-width:500px) {
+                padding-top: 20px;
+                
+            }
+
+            div {
+                width: 25px;
+                padding: 2px;
+                
+                background: black;
+                border-radius: 100%;
+                
+                
+
+                // opacity: 0.1;
+                .icons {
+                    color: white;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+
+
+                }
+            }
+        }
+
+    }
+
 }
