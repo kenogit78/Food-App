@@ -17,11 +17,11 @@ const Navbar = () => {
             <ul className={responsivenes ? 'navlinkShow' : 'navlinksHide'} onClick={()=>setresponsivenes(false)}>
                 <li>Home</li>
                   <li>
-                <Link className='login' to="/Signin">
+                <Link className='login' to="/login">
                     Login
                 </Link>
                     </li>
-                <Link to="/Signup" >
+                <Link to="/signup" >
                   <li><button className='signUp'>Sign Up</button></li>
                 </Link>
             </ul>

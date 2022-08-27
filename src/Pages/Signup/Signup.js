@@ -82,9 +82,9 @@ const Signup = () => {
 
         <form action="" >
           <InputFormDiv >
-          <input type="text" placeholder='Your First Name' />
-          <input type="text" placeholder='Your Email Address' />
-          <input type="text" placeholder='Your password' />
+          <input type="text" placeholder='Your First Name' name='name' />
+          <input type="text" placeholder='Your Email Address' name='email' />
+          <input type="password" placeholder='Your password' name='password' />
 
           </InputFormDiv>
 
