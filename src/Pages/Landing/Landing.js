@@ -24,8 +24,8 @@ const Landing = () => {
                 <p>Browse from our list of specials to place your order and have food  <br/> delivered to you in no time. Affordable, tasty and fast!</p>
 
                 <span className='store'>
-                  <a href='#'><img className='storeImg' src={playstore} alt='playstore'/></a>
-                  <a href='#'><img  className='storeImg' src={applestore} alt='applestore'/></a>
+                  <a href='/#'><img className='storeImg' src={playstore} alt='playstore'/></a>
+                  <a href='/#'><img  className='storeImg' src={applestore} alt='applestore'/></a>
                 </span>
 
             </div>

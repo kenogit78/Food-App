@@ -1,10 +1,10 @@
 import React from "react";
 import Playstore from "./Images/playStore.svg";
 import Applestore from "./Images/appleStore.svg";
-import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import twitter from './Images/twitter.svg';
+
 const Footer = () => {
   return (
     <div className="footer">
