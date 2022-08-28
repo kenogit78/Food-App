@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import loginPicture from "../../Component/Images/loginPicture.svg";
 import Button from "../../Component/Button";
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import './sass/Signin.css'
 import {ToastContainer, toast } from "react-toastify";
@@ -127,7 +128,7 @@ const Signin = () => {
         <img src={loginPicture} alt="loginpicture" />
       </div>
       <FormDiv>
-        <h2>Welcome Back!</h2>
+        <h3>Welcome Back!</h3>
         <form onSubmit={handleSubmit}>
         <InputFormDiv>
             <input type="email" placeholder="Your Email address" name='email' onChange={handleChange} /> <br />
@@ -142,6 +143,10 @@ const Signin = () => {
             </span>{" "}
             <br />
             <Button props={"LOGIN"} />
+            <div style={{display:"flex", justifyContent:"space-between", width:"100%"}} >
+              <p><Link to='/signup'><span style={{color:"#00302E"}} >Create an account.</span></Link>  </p>
+              <p><Link to='/login'><span style={{color:"#00302E"}} >Forgot Password</span></Link>  </p>
+            </div>
           </InputFormDiv>
         </form>
       </FormDiv>
