@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import signup from '../../Component/Images/signupPicture.svg'
 import { Link } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const FormDiv = styled.div`
 display: flex;
@@ -60,6 +62,7 @@ padding: 20px;
 font-weight: 400;
 font-size: 14px;
 line-height: 33px;
+color: #333;
 margin-bottom: 20px
 }
 
@@ -71,8 +74,38 @@ margin-bottom: 20px
 
 
 const Signup = () => {
+
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    password: ''
+  })
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  console.log(form)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    sessionStorage.setItem('user', JSON.stringify(form))
+
+    toast.success("Sign Up Successful")
+
+    setInterval(() => {
+      window.location= '/login'
+    }, 1500);
+    
+  }
+
+
   return (
     <div style={{display: 'flex', height:'100vh', width: '100%', overflow: 'hidden' }}>
+       <ToastContainer />
       <div>
         <img src={signup} alt="icon" />
 
@@ -80,11 +113,11 @@ const Signup = () => {
       <FormDiv> 
         <h3 >Welcome to Lilies</h3>
 
-        <form action="" >
+        <form onSubmit={handleSubmit}>
           <InputFormDiv >
-          <input type="text" placeholder='Your First Name' name='name' />
-          <input type="text" placeholder='Your Email Address' name='email' />
-          <input type="password" placeholder='Your password' name='password' />
+            <input type="text" placeholder='Your First Name' name='name' onChange={handleChange} />
+            <input type="text" placeholder='Your Email Address' name='email' onChange={handleChange} />
+            <input type="password" placeholder='Your password' name='password' onChange={handleChange}/>
 
           </InputFormDiv>
 
